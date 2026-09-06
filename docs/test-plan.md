@@ -53,10 +53,12 @@
 - Разрешение: 3120×2080 + мобильное тестирование
 
 # 7. Артефакты
+- `docs/api-testing.md`
 - `docs/smoke-checklist.md`
+- `docs/e2e-testing.md`
 - `docs/test-cases.md`  
 - `docs/bug-reports.md` 
-- `evidence/screenshots/` (скрины дефектов)
+- `evidence/screenshots/` (скриншоты дефектов)
 
 # 8. Критерии входа/выхода
 **Вход:**
@@ -72,3 +74,14 @@
 - Заполнен итоговый summary 
 
 # 9. Результаты тестирования
+## 9.1 Сводка выполнения 
+| Тип тестирования | Документ | Всего | PASS | FAIL | BLOCKED | Pass rate |
+|---|---|---:|---:|---:|---:|---:|
+| Smoke | docs/smoke-checklist.md | 21 | 21 | 0 | 0 | 100% |
+| Functional test cases | docs/test-cases.md | 21 | 17 | 4 | 0 | 80% |
+| API testing | docs/api-testing.md | 5 | 5 | 0 | 0 | 100% |
+| E2E testing | docs/e2e-testing.md | 2 | 2 | 0 | 0 | 100% |
+| **ИТОГО** | - | 49 | 45 | 4 | 0 | 91% |
+
+## 9.2 Итоговая оценка качества 
+- **Рекомендация к релизу:** GO 
