@@ -54,9 +54,7 @@
 
 # 7. Артефакты
 - `docs/smoke-checklist.md`
-- `docs/test-cases.md` 
-- `docs/api-testing.md` 
-- `docs/e2e.md`
+- `docs/test-cases.md`  
 - `docs/bug-reports.md` 
 - `evidence/screenshots/` (скрины дефектов)
 
