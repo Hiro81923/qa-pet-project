@@ -56,7 +56,7 @@ load_dotenv()
 PASSWORD = os.getenv("MY_PASSWORD")
 
 @pytest.mark.api
-def test_successful_login_with_custom_password():
+def test_successful_login():
     payload = {
         "email": "eve.holt@reqres.in", 
         "password": PASSWORD        
