@@ -5,7 +5,6 @@ from playwright.sync_api import sync_playwright
 @pytest.fixture(scope="function")
 def browser_context():
     with sync_playwright() as p:
-        # Проверяем: если мы в CI (в облаке), ставим headless=True, иначе локально headless=False
         is_ci = os.getenv("CI") == "true"
         
         browser = p.chromium.launch(headless=is_ci)

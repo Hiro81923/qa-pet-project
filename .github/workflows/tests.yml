@@ -32,4 +32,4 @@ jobs:
         DB_USER: ${{ secrets.DB_USER }}
         DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
         API_MY_PASSWORD: ${{ secrets.API_MY_PASSWORD }}
-      run: pytest --cache-clear -v
+      run: xvfb-run pytest --cache-clear -v
