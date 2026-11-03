@@ -1,27 +1,43 @@
-# QA Pet Project — DemoBlaze (Manual Testing)
+# QA Pet Project — DemoBlaze & ReqRes (Manual + Automation)
 
-Тестирование демо e-commerce сайта: https://www.demoblaze.com/index.html  
-Формат: ручное тестирование + базовые API проверки (DevTools/опционально Postman)
+Учебный пет-проект, объединяющий ручное тестирование e-commerce (DemoBlaze), автоматизацию UI/API (ReqRes) и CI/CD через GitHub Actions.
+
+* **Тестирование UI:** [DemoBlaze](https://demoblaze.com)
+* **Тестирование API:** [ReqRes.in](https://reqres.in)
+* **Формат:** Ручное тестирование + Автоматизация (Python/Pytest) + CI/CD
+
+---
 
 ## Документация
-- Test Plan: [docs/test-plan.md](docs/test-plan.md)
-- Smoke Checklist: [docs/smoke-checklist.md](docs/smoke-checklist.md)
-- Test Cases: [docs/test-cases.md](docs/test-cases.md)
-- API Testing: [docs/api-testing.md](docs/api-testing.md)
-- E2E Testing: [docs/e2e-testing.md](docs/e2e-testing.md)
-- Bug Reports: [docs/bug-reports.md](docs/bug-reports.md)
 
-## Вложения
-Скриншоты: `evidence/screenshots/`
+* `docs/test-plan.md` — Тест-план
+* `docs/smoke-checklist.md` — Чек-лист проверки
+* `docs/test-cases.md` — Сценарии для ручных проверок
+* `docs/bug-reports.md` — Найденные баги
+* `docs/automation.md` — **[NEW]** Руководство по автотестам
+* `docs/api-testing.md` — Спецификация проверок бэкенда
 
-## Краткая сводка 
-- Smoke: `21/21`
-- Functional: `17/21`
-- API: `5/5`
-- E2E: `2/2`
-- Bugs found: `4` (Critical: `1`, Major: `3`)
+### Вложения
+* Скриншоты и баги: `evidence/screenshots/`
+
+---
+
+## Краткая сводка по результатам
+
+* **Smoke / Функциональные тесты:** Пройдены/найдены дефекты 
+* **API / UI E2E автотесты:** Успешно запущены
+* **Найдено багов:** 4 дефекта
+
+---
+
+## Стек технологий в автоматизации
+
+* **Язык / Фреймворк:** Python 3.13, Pytest
+* **Инструменты:** Playwright (UI), Requests (API), GitHub Actions (CI/CD)
+
+---
 
 ## Как пользоваться репозиторием
-1. Откройте Test Plan и раздел “Результаты”
-2. Посмотрите Smoke, Functional, API, E2E кейсы с фактическими результатами
-3. Откройте Bug Reports и Evidence для подтверждений
+
+1. **Ручное тестирование:** см. `docs/test-plan.md` и `docs/bug-reports.md`.
+2. **Автоматизация:** см. `docs/automation.md` или запустите `pytest -v`.
